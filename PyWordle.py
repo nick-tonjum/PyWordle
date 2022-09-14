@@ -117,9 +117,9 @@ while True:
                 currentcolumn += 1
             queuedletters.remove(letter)
 
-    if currentrow == 6:
-        RestartGame("lose")
     if correctletters == 5:
         RestartGame("win")
+    if currentrow == 6:
+        RestartGame("lose")
     window.update_idletasks()
     window.update()
